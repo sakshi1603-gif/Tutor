@@ -1,4 +1,4 @@
-import CourseCard from './CourseCard';
+import CourseCard from './CourseCard.jsx';
 import styles from './Courses.module.css';
 
 const courses = [
