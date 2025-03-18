@@ -1,0 +1,144 @@
+/* Footer.module.css */
+.footer {
+    background-color: #1e293b;
+    color: #f8fafc;
+    padding: 3rem 0 1.5rem;
+    margin-top: 3rem;
+  }
+  
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 2rem;
+  }
+  
+  .footerContent {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+    margin-bottom: 2rem;
+  }
+  
+  .logoSection .logo {
+    font-size: 1.8rem;
+    margin-bottom: 0.5rem;
+    color: #4a6cf7;
+  }
+  
+  .logoSection .tagline {
+    color: #cbd5e1;
+    margin-bottom: 1.5rem;
+  }
+  
+  .quickLinks h3,
+  .contactInfo h3 {
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+    position: relative;
+  }
+  
+  .quickLinks h3::after,
+  .contactInfo h3::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -5px;
+    width: 40px;
+    height: 2px;
+    background-color: #4a6cf7;
+  }
+  
+  .linkList {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .linkList li {
+    margin-bottom: 0.8rem;
+  }
+  
+  .linkList li a,
+  .contactInfo p {
+    color: #cbd5e1;
+    text-decoration: none;
+    transition: color 0.3s ease;
+  }
+  
+  .linkList li a:hover {
+    color: #4a6cf7;
+  }
+  
+  .contactInfo p {
+    margin-bottom: 0.8rem;
+  }
+  
+  .socialSection {
+    margin-bottom: 2rem;
+  }
+  
+  .socialIcons {
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+    margin-bottom: 1.5rem;
+  }
+  
+  .socialIcon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: rgba(255, 255, 255, 0.1);
+    color: #f8fafc;
+    transition: all 0.3s ease;
+  }
+  
+  .socialIcon:hover {
+    background-color: #4a6cf7;
+    transform: translateY(-3px);
+  }
+  
+  .copyright {
+    text-align: center;
+    padding-top: 1.5rem;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    color: #94a3b8;
+    font-size: 0.9rem;
+  }
+  
+  /* Responsive adjustments */
+  @media (max-width: 768px) {
+    .footerContent {
+      grid-template-columns: 1fr;
+      gap: the third block;}
+    
+    .logoSection,
+    .quickLinks,
+    .contactInfo {
+      text-align: center;
+    }
+    
+    .quickLinks h3::after,
+    .contactInfo h3::after {
+      left: 50%;
+      transform: translateX(-50%);
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .footer {
+      padding: 2rem 0 1rem;
+    }
+    
+    .container {
+      padding: 0 1rem;
+    }
+    
+    .socialIcons {
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+  }
