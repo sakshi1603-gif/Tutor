@@ -1,65 +1,151 @@
-.hero {
-    /* width: 80rem; */
-    display: flex;
-    /* justify-content: center; */
-    align-items: center;
-    justify-content: center;
-    padding: 40px;
-    background-color: #f5f5f5;
-    gap: 20px;
-    margin:40px;
-  }
-  
-  .content {
-    flex: 1;
-    text-align: left;
-  }
-  
-  h1 {
-    font-size: 2.5rem;
-    color: #333;
-    margin-bottom: 16px;
-  }
-  
-  p {
-    font-size: 1.2rem;
-    color: #555;
-    margin-bottom: 24px;
-  }
-  
-  .button {
-    padding: 12px 24px;
-    background-color: #007bff;
-    color: #fff;
-    font-size: 1rem;
-    border: none;
-    border-radius: 8px;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-  }
-  
-  .button:hover {
-    background-color: #0056b3;
-  }
-  
-  .image {
-    flex: 1;
-    max-width: 400px;
-    width: 100%;
-    height: auto;
-    border-radius: 12px;
-    object-fit: cover;
-  }
-  
-  /* Responsive design */
-  @media (max-width: 768px) {
-    .hero {
-      flex-direction: column;
-      text-align: center;
-    }
-  
-    .image {
-      max-width: 80%;
-    }
-  }
-  
+.heroSection {
+  position: relative;
+  padding: 6rem 1rem 4rem;
+  background-color: #f0f4ff;
+  overflow: hidden;
+  display: flex;
+}
+
+.heroOverlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-image: linear-gradient(135deg, rgba(66, 99, 235, 0.05) 0%, rgba(147, 164, 231, 0.1) 100%);
+  z-index: 1;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  position: relative;
+  z-index: 2;
+  /* display: flex; */
+}
+
+.heroContent {
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+  align-items: center;
+  margin-bottom: 4rem;
+}
+
+.heroText {
+  flex: 1;
+  max-width: 600px;
+}
+
+.heroTitle {
+  font-size: 2.75rem;
+  font-weight: 800;
+  line-height: 1.2;
+  margin-bottom: 1.5rem;
+  color: #1a1f36;
+}
+
+.highlight {
+  color: #4263eb;
+  position: relative;
+  display: inline-block;
+}
+
+.highlight::after {
+  content: '';
+  position: absolute;
+  bottom: 0.2rem;
+  left: 0;
+  height: 0.3rem;
+  width: 100%;
+  background-color: rgba(66, 99, 235, 0.2);
+  z-index: -1;
+}
+
+.heroSubtitle {
+  font-size: 1.2rem;
+  line-height: 1.6;
+  margin-bottom: 2rem;
+  color: #4a5568;
+}
+
+.heroBadges {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+  margin-bottom: 2rem;
+}
+
+.badge {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.badgeNumber {
+  font-size: 1.8rem;
+  font-weight: 700;
+  color: #4263eb;
+  line-height: 1;
+}
+
+.badgeText {
+  font-size: 0.95rem;
+  color: #718096;
+}
+
+.heroCta {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.primaryButton {
+  padding: 0.9rem 2rem;
+  background-color: #4263eb;
+  color: white;
+  font-weight: 600;
+  border-radius: 6px;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  font-size: 1rem;
+}
+
+.primaryButton:hover {
+  background-color: #3550cc;
+  transform: translateY(-2px);
+  box-shadow: 0 10px 20px rgba(66, 99, 235, 0.15);
+}
+
+.secondaryButton {
+  padding: 0.9rem 2rem;
+  background-color: white;
+  color: #4263eb;
+  font-weight: 600;
+  border-radius: 6px;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  border: 1px solid #e2e8f0;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 1rem;
+}
+
+.secondaryButton:hover {
+  background-color: #f8faff;
+  transform: translateY(-2px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.05);
+}
+
+.buttonArrow {
+  transition: transform 0.3s ease;
+}
+
+.secondaryButton:hover .buttonArrow {
+  transform: translateX(4px);
+}
+.image{
+  height: 550px;
+  margin-right: 60px;
+}

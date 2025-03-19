@@ -8,6 +8,7 @@ Header.module.css
     background-color: rgba(255, 255, 255, 0.95);
     padding: 1rem 0;
     transition: all 0.3s ease;
+ 
   }
   
   .header.scrolled {
@@ -23,6 +24,9 @@ Header.module.css
     justify-content: space-between;
     align-items: center;
     /* outline: 2px solid red; */
+    padding-bottom: 30px;
+    padding-top: 30px;
+    /* background-color: #1e293b; */
   }
   
   .logo h1 {

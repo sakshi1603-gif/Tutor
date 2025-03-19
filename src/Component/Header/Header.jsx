@@ -46,13 +46,13 @@ const Header = () => {
               <a href="/" className={styles.navLink}>Home</a>
             </li>
             <li className={styles.navItem}>
-              <a href="/tutors" className={styles.navLink}>Courses</a>
+              <a href="#about" className={styles.navLink}>About</a>
             </li>
             <li className={styles.navItem}>
-              <a href="/about" className={styles.navLink}>About</a>
+              <a href="#course" className={styles.navLink}>Courses</a>
             </li>
             <li className={styles.navItem}>
-              <a href="/contact" className={styles.navLink}>Contact</a>
+              <a href="#contact" className={styles.navLink}>Contact</a>
             </li>
             <li className={styles.navItem}>
               <a href="/login" className={styles.loginButton}>Login</a>
